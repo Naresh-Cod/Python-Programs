@@ -10,9 +10,9 @@ for usr in range(2, 21):
     prime(usr)
 
 
-prime_val = set()
-
 # ----------------------------------------
+
+prime_val = set()
 
 def prime(val):
     for i in range(2, val):
