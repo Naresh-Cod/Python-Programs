@@ -23,4 +23,5 @@ for i in range(rows-1, 0, -1):
             print(j, end=' ')
         else:
             print(" ", end=' ')
-    print()
+    print()   
+# we have edited the task
