@@ -1,0 +1,20 @@
+import numpy as np
+import pandas as pd
+from sklearn.impute import SimpleImputer
+
+# Sample dataset with missing values (NaN)
+data = {
+    'Age': [25, 30, np.nan, 35, 40, np.nan, 50],
+    'Salary': [50000, 60000, 70000, np.nan, 90000, 100000, np.nan]
+}
+
+df = pd.DataFrame(data)
+print("Original DataFrame:\n", df)
+
+# Initialize SimpleImputer with 'mean' strategy
+imputer = SimpleImputer(strategy='mean')
+
+# Apply imputation
+df_imputed = pd.DataFrame(imputer.fit_transform(df), columns=df.columns)
+
+print("\nImputed DataFrame:\n", df_imputed)
