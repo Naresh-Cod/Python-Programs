@@ -1,0 +1,3 @@
+x = 10
+x = x + 5  # Ye actually x ka new object banata hai, purana x modify nahi hota
+print(x)   # 15
