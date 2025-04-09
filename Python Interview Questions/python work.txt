@@ -1,0 +1,96 @@
+'''lis = [10, 20, 30, 10, 30, 40, 50]
+dup = []
+
+for i in range(0, 1):
+    for j in range(i+1, len(lis)):
+        if lis[i] == lis[j]:'''
+
+
+# 2 pointer aproach
+'''lis = [10, 20, 30, 20, 10]
+index = 0
+a = 0
+end = len(lis) -1
+while index < end :
+    if lis[index] != lis[end]:
+        a = 5
+        break
+
+    index += 1
+    end -= 1
+if a == 0:
+    print("Palindrome list")
+else:
+    print("Not a palindrome list")
+
+# ------------------------
+lis = 'mamam'
+index = 0
+val = 0
+end = len(lis) -1
+while index < end :
+    if lis[index] != lis[end]:
+        val = 5
+        break
+    index += 1
+    end -= 1
+
+if val == 0:
+    print("Palindrome list")
+else:
+    print("Not a palindrome list")
+
+# _____________________________________
+lis = [10, 20, 30, 40, 50]
+start = 0
+end = len(lis) -1
+
+while index < end:
+    print(lis[index] , lis[end])
+    index += 1
+    end -= 1
+'''
+#-----------
+'''lis = [10, 20, 3, 400, 50]
+val = lis[0]
+for i in lis:
+    if i > val:
+        val = i
+print(val)'''
+
+# split = return list
+
+'''lis = [10, 20, 3, 400, 50]
+max1 = lis[0]
+smax = 0
+for i in lis:
+    if i > max1:
+        smax = max1
+        max1 = i
+        print(max1, smax)
+    elif i > smax:
+        smax = i
+        print("second max", smax)'''
+
+s = "hey hello tushar"
+for word in s.split(" "):
+    print(word)
+print()
+
+# join function = return str
+# list to string = join function
+s = "hey hello tushar"
+for word in s.split(" "):
+    x = word
+print("-".join(x))
+
+# "heyy" - [h, he, hey, heyy, em ey, eyy, y, yy]
+# first value fix
+# [10, 2, 3, 5, 7] = sum = [10, 12, 15, 20, 27]
+# [10,20, 10, 60, 7] = unick [20, 60, 60]
+# "kohkho" symmetric = 'abab
+#"abcabd"
+# what is dic
+# dic me list ko kyu us krte hai
+# over list
+# dis insert and del
