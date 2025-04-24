@@ -1,0 +1,51 @@
+,EmployeeID,Name,Department,JoiningDate,Age,Salary,Experience,Location,Rating,ProjectsCompleted
+0,101,Nina Walker,Finance,2018-09-10,36,87065,9,San Francisco,2.3,8
+1,102,Rachel Lewis,HR,2019-08-09,47,142093,9,San Francisco,1.5,23
+2,103,Bob Smith,IT,2012-05-10,44,149299,10,Boston,2.4,7
+3,104,Charlie Brown,HR,2013-07-18,49,82606,7,San Francisco,4.6,23
+4,105,Paul Turner,HR,2013-02-04,27,61534,5,Boston,2.1,24
+5,106,Ian Clark,Finance,2012-12-31,29,144663,14,San Francisco,3.6,11
+6,107,David Lee,HR,2018-06-20,43,90397,10,Los Angeles,1.0,24
+7,108,Alice Johnson,HR,2014-06-27,31,141387,8,San Francisco,2.4,13
+8,109,David Lee,Finance,2015-12-10,45,51016,13,Boston,2.2,5
+9,110,Alice Johnson,HR,2011-04-12,33,139789,5,Chicago,1.7,12
+10,111,Nina Walker,HR,2013-05-23,31,105591,3,San Francisco,3.1,11
+11,112,Paul Turner,HR,2010-11-27,42,139812,5,Chicago,2.9,22
+12,113,Tina Scott,IT,2014-01-22,28,73247,7,Los Angeles,3.8,12
+13,114,Helen Scott,IT,2015-11-06,49,74300,5,New York,2.1,5
+14,115,Grace Harris,IT,2019-06-07,52,124065,3,Los Angeles,2.0,15
+15,116,Charlie Brown,Finance,2018-09-07,38,132798,7,San Francisco,1.7,22
+16,117,Quincy Foster,Marketing,2017-12-29,42,59268,12,Chicago,1.9,14
+17,118,Alice Johnson,HR,2010-05-11,50,136807,9,Chicago,3.2,7
+18,119,Paul Turner,HR,2014-08-13,33,62185,9,Boston,2.6,11
+19,120,Liam Carter,Finance,2019-04-04,50,113704,13,Chicago,1.3,20
+20,121,Sam Baker,HR,2012-02-09,45,136779,11,Boston,2.0,20
+21,122,Nina Walker,IT,2016-07-19,26,89099,12,New York,2.0,24
+22,123,Frank Green,Marketing,2014-02-24,44,58571,12,San Francisco,3.8,21
+23,124,Frank Green,Sales,2019-07-18,52,88044,14,Boston,3.8,6
+24,125,Mona Roberts,HR,2017-10-24,39,101214,5,New York,1.6,5
+25,126,Sam Baker,IT,2016-08-30,52,111228,9,Chicago,5.0,20
+26,127,Helen Scott,Sales,2013-04-30,31,98984,3,Chicago,2.1,16
+27,128,Bob Smith,Marketing,2012-08-13,36,90774,6,New York,4.9,9
+28,129,Alice Johnson,Sales,2016-05-13,53,52568,6,Chicago,2.6,9
+29,130,Oscar Evans,IT,2013-03-30,32,112592,7,New York,1.1,13
+30,131,Alice Johnson,Sales,2011-04-05,39,117563,9,Boston,2.4,13
+31,132,Eva White,Finance,2019-04-09,27,52695,9,Boston,3.5,7
+32,133,Paul Turner,Sales,2010-01-22,38,98190,13,New York,3.7,23
+33,134,Sam Baker,HR,2016-04-19,41,55258,6,Boston,3.1,20
+34,135,David Lee,HR,2012-01-18,28,137538,9,Boston,2.8,20
+35,136,Charlie Brown,Finance,2017-12-14,42,89504,13,Boston,3.2,7
+36,137,Quincy Foster,IT,2019-12-12,32,83159,5,Los Angeles,3.4,24
+37,138,Quincy Foster,HR,2011-04-20,28,63986,8,San Francisco,1.3,5
+38,139,Liam Carter,Marketing,2012-12-18,26,111858,14,Chicago,2.5,24
+39,140,Nina Walker,HR,2017-01-02,54,62666,4,Los Angeles,2.0,15
+40,141,Frank Green,HR,2015-08-10,30,88660,12,Boston,4.2,21
+41,142,Charlie Brown,IT,2019-09-18,46,53561,11,New York,2.9,12
+42,143,Ian Clark,Sales,2017-07-10,34,76854,7,Boston,4.9,8
+43,144,Eva White,HR,2012-09-02,28,114505,8,San Francisco,2.6,10
+44,145,Quincy Foster,Finance,2014-12-12,46,102251,14,Boston,4.3,12
+45,146,Nina Walker,Sales,2010-07-09,53,72662,14,New York,4.2,24
+46,147,Charlie Brown,Marketing,2018-03-25,42,58392,14,San Francisco,1.6,7
+47,148,Alice Johnson,IT,2017-06-27,50,80535,14,Boston,3.0,20
+48,149,Tina Scott,Marketing,2018-03-25,36,128603,6,San Francisco,3.8,7
+49,150,Alice Johnson,Sales,2011-07-17,26,102256,13,Chicago,4.4,22
