@@ -1,0 +1,9 @@
+my_dict = {"name": "Alice", "age": 25, "city": "Delhi"}
+print(my_dict["name"])  # Output: Alice
+
+my_dict["age"] = 26  # Modify value
+my_dict["country"] = "India"  # Add new key-value pair
+del my_dict["city"]  # Remove key-value pair
+
+print(my_dict)  
+# Output: {'name': 'Alice', 'age': 26, 'country': 'India'}
