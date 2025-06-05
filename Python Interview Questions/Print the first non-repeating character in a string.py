@@ -1,0 +1,2 @@
+s = "aabbccdef"
+# Output: d
