@@ -1,0 +1,206 @@
+# 🧩 5. FUNCTIONS
+
+# Function - Function ek block of code hota hai jisko hum baar-baar call kar sakte hain bina dobara likhe. Isse code reusable, clean aur modular banta hai.
+
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Saumya"))
+
+# Variable Length Arguments - Jab hume pata nahi hota kitne arguments aayenge, tab *args (tuple) aur **kwargs (dict) ka use karte hain for flexible input.
+
+def add_all(*args):
+    return sum(args)
+
+print(add_all(1, 2, 3, 4))  # Output: 10
+
+# Keyword Arguments - Function ke parameters ko key-value format me pass karne ke liye use hota hai (**kwargs), jisse named input liya ja sake.
+
+def show_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+show_info(name="Ravi", age=25)
+
+# Recursion - Jab function khud ko call karta hai tab recursion hota hai. Ye complex problems ko chhote parts me tod kar solve karta hai.
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))  # Output: 120
+
+# Lambda - Lambda ek anonymous (naam-less) one-line function hota hai. Short tasks ke liye useful hota hai jahan full function likhna zaroori nahi hota.
+square = lambda x: x ** 2
+print(square(5))  # Output: 25
+
+# Decorator - Decorator kisi function ke behavior ko bina uska code badle modify karne ke liye use hota hai. Useful for logging, authentication etc.
+
+def decorator_func(func):
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+    return wrapper
+
+@decorator_func
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+
+# 🛡️ 6. EXCEPTION HANDLING - Program me agar error aaye to use handle karne ke liye try-except block ka use hota hai, jisse program crash na ho.
+
+try:
+    x = int("abc")
+except ValueError as e:
+    print("Error:", e)
+finally:
+    print("Cleanup done")
+
+# raise - Custom exception throw karne ke liye use hota hai.
+# finally - Har haal me chalne wala block, usually cleanup ke liye.
+# raise ValueError("This is a forced error")
+
+
+# 🧱 7. OOP - Object-Oriented Programming real-world entities (class, object) ko model karta hai. Ye code ko reusable, modular aur secure banata hai.
+
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak(self):  # Overriding
+        print("Dog barks")
+
+d = Dog()
+d.speak()
+
+# Polymorphism - Ek hi function ya method ka alag-alag class me different behavior hona. Ye code ko zyada flexible banata hai.
+for a in [Animal(), Dog()]:
+    a.speak()
+
+# Encapsulation - Jab data aur uske related methods ko ek class me bind karte hain aur outside access se protect karte hain.
+class Person:
+    def __init__(self):
+        self._age = 30        # protected
+        self.__salary = 5000  # private
+
+p = Person()
+print(p._age)          # Accessible
+# print(p.__salary)    # Error (Name mangling)
+
+# Abstraction via abstract class - Sirf essential details dikhana aur complex logic ko hide karna. Abstract class se implementation hide hoti hai.
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def area(self):
+        return 3.14 * 5 * 5
+
+c = Circle()
+print(c.area())
+
+# Multiple Inheritance & Name Conflict - Jab ek class multiple parent classes se inherit karti hai, tab method conflict ko MRO solve karta hai.
+class A:
+    def greet(self):
+        print("Hello from A")
+
+class B:
+    def greet(self):
+        print("Hello from B")
+
+class C(A, B):
+    pass
+
+c = C()
+c.greet()  # Follows Method Resolution Order (MRO)
+
+
+# 🔃 8. ITERATORS & GENERATORS - Iterators next() function se elements ko ek-ek karke access karte hain. Generators yield ka use karke memory efficient iteration karte hain.
+
+# Iterator
+nums = [1, 2, 3]
+it = iter(nums)
+print(next(it))  # Output: 1
+
+# Generator
+
+def my_gen():
+    yield 1
+    yield 2
+    yield 3
+
+for val in my_gen():
+    print(val)
+
+
+# 📁 9. FILE HANDLING - Python me file read/write karne ke liye open(), read(), write(), with open() jaise functions ka use hota hai.
+
+with open("sample.txt", "w") as f:
+    f.write("Hello, File!")
+
+with open("sample.txt", "r") as f:
+    print(f.read())
+
+
+# 📦 10. OTHER TOPICS - Ye miscellaneous topics Python ke built-in features ko use karne me madad karte hain jaise modules, functional programming, datetime, regex, json, etc.
+
+# 'from' - Kisi module ke andar se specific function/class import karne ke liye use hota hai.
+from math import sqrt  # sirf sqrt import karega
+print(sqrt(25))
+
+# 'in' - Kisi element ka presence check karta hai list, tuple, set, string ya dict me.
+print(2 in [1, 2, 3])      # Output: True
+print('a' in 'apple')      # Output: True
+print('name' in data)      # Output: True  (data is a dictionary)
+
+# __name__ check - Jab Python file directly run hoti hai to __name__ ki value '__main__' hoti hai. Iska use hota hai ye check karne ke liye ki code direct run ho raha hai ya kisi aur file se import hua hai.
+if __name__ == '__main__':
+    print("Running directly")
+
+# map, filter, reduce - Functional programming tools hain jo list/process ko modify karne ke liye use hote hain:
+# map(): sabhi elements par ek function lagata hai
+# filter(): condition satisfy karne wale elements ko nikalta hai
+# re - Regular expression (pattern matching) ke liye use hota hai. Text search, data validation, parsing ke liye important hai.duce(): sabhi elements ko combine karke ek result deta hai
+nums = [1, 2, 3, 4]
+print(list(map(lambda x: x * 2, nums)))  # map
+print(list(filter(lambda x: x % 2 == 0, nums)))  # filter
+
+from functools import reduce
+print(reduce(lambda x, y: x + y, nums))  # reduce
+
+# Type casting - Ek data type ko doosre type me convert karne ke liye use hota hai, jaise str ko int me, float ko int me etc.
+s = "123"
+i = int(s)
+print(i + 1)
+
+# random - Random number ya random choice generate karne ke liye use hota hai. Games, simulations, testing me helpful hai.
+import random
+print(random.choice([1, 2, 3]))
+
+# datetime - Date aur time se related operations ke liye use hota hai. Timestamps, logs, scheduler apps me useful hai.
+import datetime
+print(datetime.datetime.now())
+
+# math - Advanced mathematical operations (sqrt, sin, log, factorial) ke liye use hota hai.
+import math
+print(math.sqrt(16))
+
+# re
+import re
+pattern = re.search("\d+", "Age is 25")
+print(pattern.group())  # Output: 25
+
+# json - JSON (JavaScript Object Notation) files ko read/write karne ke liye use hota hai. API data exchange ke liye bahut important format hai.
+import json
+data = {"name": "Aman", "age": 22}
+json_str = json.dumps(data)
+print(json_str)
+print(json.loads(json_str))
